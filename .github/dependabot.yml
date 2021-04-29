@@ -1,0 +1,29 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: org.netbeans.api:org-openide-dialogs
+    versions:
+    - RELEASE122
+  - dependency-name: org.netbeans.api:org-netbeans-modules-extexecution-base
+    versions:
+    - RELEASE122
+  - dependency-name: org.netbeans.api:org-netbeans-modules-extexecution
+    versions:
+    - RELEASE122
+  - dependency-name: org.netbeans.api:org-netbeans-modules-projectapi
+    versions:
+    - RELEASE122
+  - dependency-name: org.netbeans.api:org-openide-awt
+    versions:
+    - RELEASE122
+  - dependency-name: org.netbeans.api:org-openide-util
+    versions:
+    - RELEASE122
+  - dependency-name: org.netbeans.api:org-openide-filesystems
+    versions:
+    - RELEASE122
